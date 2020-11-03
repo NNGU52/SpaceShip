@@ -1,0 +1,196 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Русский (Россия) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_RUS)
+LANGUAGE LANG_RUSSIAN, SUBLANG_DEFAULT
+#pragma code_page(1251)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_RUS)\r\n"
+    "LANGUAGE 25, 1\r\n"
+    "#pragma code_page(1251)\r\n"
+    "#include ""res\\SpaceShip.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""     // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\SpaceShip.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_SPACESHIP_DIALOG DIALOGEX 0, 0, 649, 400
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_VISIBLE | WS_CAPTION
+EXSTYLE WS_EX_APPWINDOW
+CAPTION 
+"Моделирование спуска космического корабля с орбиты с учётом влияния земной атмосферы"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    PUSHBUTTON      "Старт",IDC_START,187,380,50,14
+    PUSHBUTTON      "Стоп",IDC_STOP,247,380,50,14
+    PUSHBUTTON      "Выход",IDCANCEL,306,380,50,14
+    EDITTEXT        IDC_HEIGHT,537,19,47,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_V0,537,36,47,14,ES_AUTOHSCROLL
+    CONTROL         "",IDC_MAINGRAF,"Static",SS_BLACKFRAME,7,7,482,367
+    LTEXT           "Скорость:",IDC_STATIC,499,40,36,8
+    LTEXT           "Высота:",IDC_STATIC,499,23,28,8
+    GROUPBOX        "Начальные параметры",IDC_STATIC,496,7,150,153
+    EDITTEXT        IDC_V,572,188,47,14,ES_AUTOHSCROLL
+    LTEXT           "Скорость:",IDC_STATIC,499,191,36,8
+    EDITTEXT        IDC_H,572,173,47,14,ES_AUTOHSCROLL
+    LTEXT           "Высота над Землёй:",IDC_STATIC,499,177,69,8
+    GROUPBOX        "Текущие параметры полёта",IDC_STATIC,496,162,150,45
+    CONTROL         "",IDC_U_GRAF,"Static",SS_BLACKFRAME,503,214,131,56
+    CONTROL         "",IDC_T_GRAF,"Static",SS_BLACKFRAME,503,274,131,56
+    EDITTEXT        IDC_VXY,586,117,27,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "Включить тормозные двигатели",IDC_TIMER_ON,506,136,129,14
+    EDITTEXT        IDC_ACTIVE_TIME,586,99,27,14,ES_AUTOHSCROLL
+    CONTROL         "",IDC_E_GRAF,"Static",SS_BLACKFRAME,503,335,131,56
+    GROUPBOX        "Включение тормозных двигателей",IDC_STATIC,503,86,136,69
+    EDITTEXT        IDC_EDITK,593,53,40,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "м",IDC_STATIC,590,23,8,8
+    LTEXT           "м/с",IDC_STATIC,590,40,11,8
+    LTEXT           "Время действия силы:",IDC_STATIC,507,102,76,8
+    LTEXT           "с",IDC_STATIC,617,102,8,8
+    LTEXT           "Прошло времени:",IDC_STATIC,507,120,60,8
+    LTEXT           "с",IDC_STATIC,617,119,8,8
+    LTEXT           "м",IDC_STATIC,623,177,8,8
+    LTEXT           "м/с",IDC_STATIC,622,191,11,8
+    LTEXT           "Слйчай:",IDC_STATIC,7,383,28,8
+    PUSHBUTTON      "а)",IDC_A,43,380,20,14
+    PUSHBUTTON      "б)",IDC_B,70,380,20,14
+    LTEXT           "Величина силы лоб. сопр.:",IDC_STATIC,499,55,91,8
+    CONTROL         "",IDC_V_GRAF,"Static",SS_BLACKFRAME,9,316,131,56
+    LTEXT           "dt:",IDC_STATIC,500,72,10,8
+    EDITTEXT        IDC_DT,519,68,78,14,ES_AUTOHSCROLL
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,0
+ PRODUCTVERSION 1,0,0,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904e4"
+        BEGIN
+            VALUE "CompanyName", "ННГУ"
+            VALUE "FileDescription", "Курсовая работа 3.6"
+            VALUE "FileVersion", "1.0.0.0"
+            VALUE "InternalName", "SpaceShip.exe"
+            VALUE "LegalCopyright", "All rights reserved."
+            VALUE "OriginalFilename", "SpaceShip.exe"
+            VALUE "ProductName", "SpaceShip"
+            VALUE "ProductVersion", "1.0.0.0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1252
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_SPACESHIP_DIALOG, DIALOG
+    BEGIN
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // Русский (Россия) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_RUS)
+LANGUAGE 25, 1
+#pragma code_page(1251)
+#include "res\SpaceShip.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"     // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

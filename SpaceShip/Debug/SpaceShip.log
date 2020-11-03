@@ -1,0 +1,18 @@
+﻿Сборка начата 03.11.2020 12:48:39.
+     1>Проект "C:\Users\Acer\Desktop\SpaceShip\SpaceShip\SpaceShip.vcxproj" в узле 2 (целевые объекты Build).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D _UNICODE /D UNICODE /D _AFXDLL /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"stdafx.h" /Fp"Debug\SpaceShip.pch" /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt SpaceShipDlg.cpp
+         SpaceShipDlg.cpp
+     1>c:\users\acer\desktop\spaceship\spaceship\spaceshipdlg.cpp(236): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
+     1>c:\users\acer\desktop\spaceship\spaceship\spaceshipdlg.cpp(271): warning C4244: аргумент: преобразование "const double" в "int", возможна потеря данных
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Acer\Desktop\SpaceShip\Debug\SpaceShip.exe" /INCREMENTAL /NOLOGO /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /manifestinput:"C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\Include\Manifest\dpiaware.manifest" /DEBUG /PDB:"C:\Users\Acer\Desktop\SpaceShip\Debug\SpaceShip.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /ENTRY:"wWinMainCRTStartup" /DYNAMICBASE:NO /IMPLIB:"C:\Users\Acer\Desktop\SpaceShip\Debug\SpaceShip.lib" /MACHINE:X86 /SAFESEH Debug\SpaceShip.res
+         Debug\SpaceShip.obj
+         Debug\SpaceShipDlg.obj
+         Debug\stdafx.obj
+         SpaceShip.vcxproj -> C:\Users\Acer\Desktop\SpaceShip\Debug\SpaceShip.exe
+     1>Сборка проекта "C:\Users\Acer\Desktop\SpaceShip\SpaceShip\SpaceShip.vcxproj" завершена (целевые объекты Build).
+
+Сборка успешно завершена.
+
+Затраченное время: 00:00:02.81
